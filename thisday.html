@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Datepicker</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="thisday.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">On This Day</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Highlights</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Birthdays</a></li>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Deaths</a></li>
+                </ul> 
+            </div>
+            <ul id="infolist"></ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid" style="margin-top: 50px;">
+        <form method="post" action="#">
+            <div id="container" class="ui-widget">
+                <label for="demoDate"><b>Date: </b></label>
+                <input id="filterDate" type="text" placeholder="mm/dd/yyyy"/><div id="dofilter">Go</div>
+                <ul id="mylisting"></ul>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="thisday.js"></script>
+</body>
+</html>
