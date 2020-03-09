@@ -672,27 +672,10 @@ var jsonData =
   					};
   				});
             };
+
         });
     });
     
     $('#dofilter').click();
 
-
-  	$("#navigation ul.nav > li > a").on("click", function () {
-  		$('#infolist p').remove(); 
-
-  		for(var i in jsonData) {
-  			var key = i;
-  			var val = jsonData[i];
-
-  			for(var j in val) {
-  				var sub_key = j;
-  				var sub_val = val[j];
-
-  				if (($(this).text()) === sub_key) {
-  					$('#infolist').append(`<p><b>${sub_key}:</b><br> ${sub_val} </p>`);
-  				};
-  			};
-  		};
-	});
 });
